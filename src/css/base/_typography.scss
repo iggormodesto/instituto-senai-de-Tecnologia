@@ -1,0 +1,65 @@
+body {
+  font-size: 16px;
+  color: var(--neutral-dark);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight-light);
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* TÍTULOS */
+h1,
+.h1 {
+  font-size: 2.25rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 0.875rem;
+}
+
+/* PESO DA FONT */
+.font-weight-thin {
+  font-weight: var(--font-weight-thin);
+}
+
+.font-weight-light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-weight-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-weight-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-weight-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}

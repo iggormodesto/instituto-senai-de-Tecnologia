@@ -1,0 +1,71 @@
+:root {
+  /* PRIMARY */
+  --color-primary-000: #00ABE5;
+  --color-primary-001: #9BF3FD;
+  --color-primary-002: #63E2F8;
+  --color-primary-003: #33CBF0;
+
+  /* SECONDARY */
+  --color-secondary-100: #0067B5;
+  --color-secondary-101: #004F9B;
+  --color-secondary-102: #003A82;
+  --color-secondary-103: #002969;
+
+  /* GRADIENT */
+  --color-gradient-primary: #000000;
+  --color-gradient-secondary: #000000;
+  --color-gradient-light: #000000;
+  --color-gradient-dark: #000000;
+
+  /* LIGHT */
+  --color-light-300: #9A9FA3;
+  --color-light-301: #F5F6F7;
+  --color-light-302: #EBEDEF;
+  --color-light-303: #C8CED1;
+
+  /* DARK */
+  --color-dark-400: #1B283E;
+  --color-dark-401: #616366;
+  --color-dark-402: #454E58;
+  --color-dark-403: #2D3A4A;
+
+  /* FEEDBACK — SUCCESS */
+  --color-success-500: #000000;
+  --color-success-501: #000000;
+  --color-success-502: #000000;
+  --color-success-503: #000000;
+
+  /* FEEDBACK — INFO */
+  --color-info-500: #000000;
+  --color-info-501: #000000;
+  --color-info-502: #000000;
+  --color-info-503: #000000;
+
+  /* FEEDBACK — WARNING */
+  --color-warning-500: #000000;
+  --color-warning-501: #000000;
+  --color-warning-502: #000000;
+  --color-warning-503: #000000;
+
+  /* FEEDBACK — ERROR */
+  --color-error-500: #000000;
+  --color-error-501: #000000;
+  --color-error-502: #000000;
+  --color-error-503: #000000;
+
+  /* USOS */
+  --brand-corporate-pure: #164194;
+  --neutral-dark: #646464;
+  --neutral-lighter: #DFDFDF;
+
+  /* PESOS DA FONTE */
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* GRID */
+  --container-max-xl: 1240px;
+}

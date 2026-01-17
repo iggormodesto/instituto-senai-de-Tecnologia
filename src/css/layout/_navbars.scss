@@ -20,8 +20,6 @@
 }
 
 .navbar-classic {
-	background-color: #fff;
-
 	&.navbar-light {
 		border-bottom: 1px solid $secondary-l3;
 	}
@@ -60,6 +58,7 @@
 	}
 
 	.navbar-nav {
+		justify-content: flex-end;
 		.nav-item:not(:last-of-type) {
 			.nav-link {
 				@include media-breakpoint-up(lg) {
