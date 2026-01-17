@@ -7,3 +7,34 @@
 		padding-top: 3rem;
 	}
 }
+
+.sub-footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	.nav {
+		align-items: center;
+	}
+
+	.nav-link {
+		color: var(--white);
+		
+		&:hover {
+			color: var(--white);
+		}
+
+		&:not(.nav-link-monospaced) {
+			font-size: 0.75rem;
+		}
+
+		& + .nav-link {
+			margin-left: 0.5rem;
+		}
+	}
+
+	.nav-link-monospaced {
+		font-size: 1.5rem;
+		margin: 0;
+		padding: 0;
+	}
+}

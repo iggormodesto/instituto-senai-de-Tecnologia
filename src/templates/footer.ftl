@@ -1,12 +1,44 @@
 <footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center text-md-left">
-        <@liferay.language_format
-          arguments='<a class="text-decoration-underline text-white" href="http://www.liferay.com" rel="external">Liferay</a>'
-          key="powered-by-x"
-        />
-      </div>
-    </div>
+  <div class="container-fluid container-fluid-max-xl sub-footer">
+    <ul class="nav">
+      <li class="nav-item">
+        <a 
+          class="nav-link nav-link-monospaced" 
+          href="#1"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a 
+          class="nav-link nav-link-monospaced" 
+          href="#1"
+          target="_blank"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a 
+          class="nav-link nav-link-monospaced" 
+          href="#1"
+          target="_blank"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </li>
+
+      <li class="nav-item ml-auto">
+        <a 
+          class="nav-link" 
+          href="#1"
+        >
+          POLÍTICA DE PRIVACIDADE
+        </a>
+      </li>
+    </ul>
   </div>
 </footer>
