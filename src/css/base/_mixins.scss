@@ -1,0 +1,130 @@
+// BOX-SHADOW CSS
+@mixin box-shadow($shadow...) {
+  $result: ();
+
+  @if (length($shadow) ==1) {
+    // Podemos passar `@include box-shadow(none);`
+    $result: $shadow;
+  } @else {
+    // Filtre para evitar propriedades inválidas, por exemplo `box-shadow: none, 1px 1px black;`
+    @for $i from 1 through length($shadow) {
+      @if nth($shadow, $i) != "none" {
+        $result: append($result, nth($shadow, $i), "comma");
+      }
+    }
+  }
+
+  @if (length($result) > 0) {
+    -webkit-box-shadow: $result;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: $result;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: $result;
+  }
+
+  /* EXEMPLO DE USO: @include box-shadow(0 3px 6px 0 rgba($black,.16)); */
+}
+
+// TRANSITION CSS
+@mixin transition($transition...) {
+  $result: ();
+
+  @if (length($transition) ==1) {
+    // Podemos passar `@include transition(none);`
+    $result: $transition;
+  } @else {
+    // Filtre para evitar propriedades inválidas, por exemplo `transition: none, 1px 1px black;`
+    @for $i from 1 through length($transition) {
+      @if nth($transition, $i) != "none" {
+        $result: append($result, nth($transition, $i), "comma");
+      }
+    }
+  }
+
+  @if (length($result) > 0) {
+    -webkit-transition: $result;
+    -moz-transition: $result;
+    -ms-transition: $result;
+    -o-transition: $result;
+    transition: $result;
+  }
+
+  /* EXEMPLO DE USO: @include transition(all 0.3s ease-in-out); */
+}
+
+// TRANSFORM CSS
+/* EXEMPLO DE USO: @include transform(translate(12px, 50%)); */
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
+// TRANSFORM ORIGIN CSS
+@mixin transform-origin($origin) {
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  transform-origin: $origin;
+
+  /* EXEMPLO DE USO: @include transform-origin(center center); */
+}
+
+// BLUR
+/* EXEMPLO DE USO: @include make-blur(15px); */
+@mixin make-blur($origin) {
+  -webkit-backdrop-filter: blur($origin);
+  -moz-backdrop-filter: blur($origin);
+  -ms-backdrop-filter: blur($origin);
+  backdrop-filter: blur($origin);
+}
+
+// TEXT-TRUNCATE
+/* EXEMPLO DE USO: @include text-truncate(2); */
+@mixin text-truncate($origin) {
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: $origin;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// CENTRALIZAR OBJETO
+/* EXEMPLO DE USO: @include make-center(); */
+@mixin make-center() {
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Ícone Bootstrap
+/* 
+  EXEMPLO DE USO: 
+  
+  @include make-center();
+  content: "\f417";
+
+  ou
+
+  @include make-center("\f417");
+*/
+@mixin make-bootstrap-icon($icon: null) {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @if $icon != null {
+    content: $icon;
+  }
+}

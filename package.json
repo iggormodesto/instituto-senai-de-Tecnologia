@@ -1,0 +1,37 @@
+{
+  "name": "instituto-senai-lf7_4-theme",
+  "version": "1.0.0",
+  "main": "package.json",
+  "keywords": [
+    "liferay-theme"
+  ],
+  "liferayTheme": {
+    "baseTheme": "styled",
+    "fontAwesome": false,
+    "templateLanguage": "ftl",
+    "version": "7.4",
+    "sassOptions": {
+      "dartSass": false
+    }
+  },
+  "devDependencies": {
+    "compass-mixins": "0.12.10",
+    "gulp": "4.0.2",
+    "liferay-frontend-css-common": "6.0.8",
+    "liferay-frontend-theme-styled": "6.0.76",
+    "liferay-frontend-theme-unstyled": "6.0.60",
+    "liferay-theme-tasks": "^11.5.5",
+    "node-sass": "^7.0.3",
+    "sass": "^1.92.1"
+  },
+  "scripts": {
+    "init": "gulp init",
+    "build": "gulp build",
+    "deploy": "gulp deploy",
+    "extend": "gulp extend",
+    "kickstart": "gulp kickstart",
+    "status": "gulp status",
+    "upgrade": "gulp upgrade",
+    "watch": "gulp watch"
+  }
+}
