@@ -1,0 +1,10 @@
+.gradle/
+.sass-cache/
+build/
+target/
+node_modules
+build
+dist
+package-lock.json
+liferay-theme.json
+.DS_Store
