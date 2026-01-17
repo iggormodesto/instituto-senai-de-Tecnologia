@@ -1,76 +1,100 @@
 .navbar-top {
-	padding-bottom: 0.907rem;
-	padding-top: 0.907rem;
+  padding-bottom: 0.907rem;
+  padding-top: 0.907rem;
 
-	.portlet {
-		&:hover,
-		&.open {
-			z-index: 1035;
-		}
-	}
+  .portlet {
+    &:hover,
+    &.open {
+      z-index: 1035;
+    }
+  }
 }
 
 .navbar-blank {
-	flex-wrap: wrap;
+  flex-wrap: wrap;
 
-	.lexicon-icon {
-		font-size: 0.625rem;
-		margin: 0 0 0 0.25rem;
-	}
+  .lexicon-icon {
+    font-size: 0.625rem;
+    margin: 0 0 0 0.25rem;
+  }
 }
 
 .navbar-classic {
-	&.navbar-light {
-		border-bottom: 1px solid $secondary-l3;
-	}
+  &.navbar-light {
+    border-bottom: 1px solid $secondary-l3;
+  }
 
-	.navbar-blank {
-		@include media-breakpoint-down(xs) {
-			margin-top: 1rem;
-		}
-	}
+  .navbar-blank {
+    @include media-breakpoint-down(xs) {
+      margin-top: 1rem;
+    }
+  }
 
-	.navbar-form {
-		padding: 0;
+  .navbar-form {
+    padding: 0;
 
-		.field-wrapper {
-			right: 0;
-			top: 0;
+    .field-wrapper {
+      right: 0;
+      top: 0;
 
-			.lfr-icon-item {
-				color: #6b6c7e;
-			}
-		}
-	}
+      .lfr-icon-item {
+        color: #6b6c7e;
+      }
+    }
+  }
 
-	.portlet-search-bar {
-		@include media-breakpoint-down(sm) {
-			width: 100%;
-		}
+  .portlet-search-bar {
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
 
-		.input-group-item {
-			margin-left: 0;
-		}
-	}
+    .input-group-item {
+      margin-left: 0;
+    }
+  }
 
-	.logo:hover {
-		text-decoration: none;
-	}
+  .logo:hover {
+    text-decoration: none;
+  }
 
-	.navbar-nav {
-		justify-content: flex-end;
-		.nav-item:not(:last-of-type) {
-			.nav-link {
-				@include media-breakpoint-up(lg) {
-					margin-right: 16px;
-				}
-			}
-		}
-	}
+  .navbar-nav {
+    justify-content: flex-end;
+    .nav-item {
+      & + .nav-item {
+        @include media-breakpoint-up(lg) {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
 
-	.nav-link {
-		color: #6b6c7e;
-		font-size: 0.9375rem;
-		font-weight: 600;
-	}
+  .nav-link {
+    color: var(--brand-corporate-medium);
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.25rem;
+    padding: 0.25rem 0;
+
+    &.text-truncate {
+      overflow: visible;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 3px;
+      border-radius: 5000px;
+      background-color: var(--brand-senai-pure);
+      position: absolute;
+      bottom: -3px;
+      @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
 }
