@@ -17,6 +17,7 @@ h1,
 h2,
 .h2 {
   font-size: 2rem;
+  line-height: 2.75rem;
 }
 
 h3,
@@ -41,25 +42,25 @@ h6,
 
 /* PESO DA FONT */
 .font-weight-thin {
-  font-weight: var(--font-weight-thin);
+  font-weight: var(--font-weight-thin) !important;
 }
 
 .font-weight-light {
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-light) !important;
 }
 
 .font-weight-normal {
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal) !important;
 }
 
 .font-weight-medium {
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium) !important;
 }
 
 .font-weight-semibold {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold) !important;
 }
 
 .font-weight-bold {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold) !important;
 }

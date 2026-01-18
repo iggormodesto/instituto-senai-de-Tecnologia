@@ -7,9 +7,15 @@
 	</compatibility>
 	<theme id="instituto-senai-lf7_4" name="Instituto SENAI de Tecnologia">
 		<template-extension>ftl</template-extension>
+		
 		<settings>
 			<setting configurable="true" key="wrap-widget-page-content" type="checkbox" value="true" />
+			<setting configurable="true" key="facebook-url" type="text" value="https://www.facebook.com/senainacional" />
+			<setting configurable="true" key="x-twitter-url" type="text" value="https://x.com/senainacional" />
+			<setting configurable="true" key="youtube-url" type="text" value="https://www.youtube.com/senaibr" />
+			<setting configurable="true" key="POLÍTICA DE PRIVACIDADE URL" type="text" value="/politica-de-privacidade" />
 		</settings>
+		
 		<roles>
 			<role-name>User</role-name>
 		</roles>

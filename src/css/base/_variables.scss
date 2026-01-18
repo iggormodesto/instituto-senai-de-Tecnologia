@@ -54,12 +54,15 @@
   --color-error-503: #000000;
 
   /* USOS */
+  --white: #FFFFFF;
   --brand-corporate-pure: #164194;
   --brand-corporate-medium: #5876AC;
   --neutral-dark: #646464;
   --neutral-lighter: #DFDFDF;
   --brand-senai-pure: #e8480f;
-  --brand-color-4: #C13A0D;
+  --brand-senai-dark: #C13A0D;
+
+  --brand-color-4: var(--brand-senai-pure);
 
   /* PESOS DA FONTE */
   --font-weight-thin: 100;
