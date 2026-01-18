@@ -1,0 +1,19 @@
+#main-content {
+  &.columns-1 {
+    & > .portlet-layout {
+      & > .portlet-column-only {
+        & > .portlet-column-content-only {
+          & > .portlet-boundary {
+            padding-top: 5.5rem;
+            padding-bottom: 5.5rem;
+            & > .portlet {
+              @include make-container();
+              width: 100%;
+              max-width: var(--container-max-xl);
+            }
+          }
+        }
+      }
+    }
+  }
+}
