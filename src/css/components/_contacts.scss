@@ -1,0 +1,24 @@
+.contacts {
+  hr {
+    border-color: rgba(102, 200, 236, 0.20);
+  }
+
+  .list-unstyled {
+    a {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: var(--font-weight-normal);
+      color: var(--color-secondary-100);
+      .fa-brands,
+      .fab,
+      .fa-regular,
+      .far {
+        color: var(--color-primary-000);
+        font-size: 1.5rem;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
