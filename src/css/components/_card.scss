@@ -1,0 +1,56 @@
+.card-type-asset {
+  border-radius: 0;
+  background-color: transparent;
+  
+  .aspect-ratio {
+    border-width: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .card-body {
+    background-color: var(--background-corporate);
+    padding: 0.75rem 1.5rem 1.5rem;
+    border: solid 1px var(--brand-corporate-light);
+    border-radius: 0 0 0.5rem 0.5rem;
+    @include transition(all 0.3s ease-in-out);
+  }
+
+  &[href]:hover {
+    .card-body {
+      background-color: var(--background-cni);
+      border-color: var(--brand-cni-lightter);
+    }
+  }
+}
+
+.image-card {
+  --aspect-ratio-16-to-9: 31%;
+  color: var(--brand-corporate-medium);
+  overflow: hidden;
+  box-shadow: none;
+
+  &[href] {
+    text-decoration: none;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--brand-corporate-pure);
+    margin-bottom: 0.75rem;
+    font-weight: var(--font-weight-bold);
+  }
+
+  .card-subtitle {
+    color: var(--brand-corporate-medium);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    p {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+    }
+  }
+}
