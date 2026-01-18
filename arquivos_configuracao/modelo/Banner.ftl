@@ -26,6 +26,7 @@
       background-image: url('${background.getData()}');
       background-size: cover;
       background-position: center;
+      min-height: 475px;
     }
   </style>
 </#if>

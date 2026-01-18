@@ -1,3 +1,9 @@
+$theme-color-palette: (
+	"white": var(--white),
+	"neutral-dark": var(--neutral-dark),
+	"primary-000": var(--color-primary-000),
+);
+
 @each $color, $value in $theme-color-palette {
 	.bg-#{$color} {
 		background-color: $value !important;

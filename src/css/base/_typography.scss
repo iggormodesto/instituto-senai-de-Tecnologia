@@ -8,6 +8,13 @@ body {
   font-variation-settings: "wdth" 100;
 }
 
+p {
+  margin-bottom: 0;
+  & + p {
+    margin-top: 1rem;
+  }
+}
+
 /* TÍTULOS */
 h1,
 .h1 {
