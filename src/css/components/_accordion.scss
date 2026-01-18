@@ -1,24 +1,50 @@
+.portlet-boundary:has(.faq) {
+  background-color: var(--background-cni);
+}
+
 .accordion {
   & > .card {
     box-shadow: none;
     margin-bottom: 0;
+    background-color: transparent;
   }
 
   .card-header {
     background-color: transparent;
     padding: 0;
-    
+
     .btn {
       padding: 1rem 0 1.25rem;
       border: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include transition(all 0.3s ease-in-out);
+
+      .fa-solid,
+      .fas {
+        font-size: 1.5rem;
+        @include transition(all 0.3s ease-in-out);
+      }
+
       &:not(.collapsed) {
         padding-bottom: 0.5rem;
+        .fa-solid,
+        .fas {
+          transform: rotate(180deg);
+        }
       }
     }
-    
+
     .btn-link {
       color: var(--brand-corporate-medium);
       font-weight: var(--font-weight-bold);
+      @include transition(all 0.3s ease-in-out);
+
+      &:not(.collapsed) {
+        color: var(--brand-cni-pure);
+      }
+      
       &:hover {
         text-decoration: none;
       }
@@ -30,8 +56,10 @@
   }
 
   .collapse {
-    border-bottom: solid 1px var(--brand-cni-lightter);
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem;
+    .card-body {
+      border-bottom: solid 1px var(--brand-cni-lightter);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
   }
 }

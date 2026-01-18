@@ -3,7 +3,7 @@
 -->
 
 <#if entry.getSiblings()?has_content>
-  <div class="row justify-content-center">
+  <div class="row justify-content-center faq">
     <div class="col-lg-8">
       <h2 class="text-primary-000 text-center pb-3 mb-3 pb-3">${.vars["reserved-article-title"].data}</h2>    
       
@@ -24,6 +24,7 @@
                   aria-controls="collapse_${.vars['reserved-article-id'].data}_${curEntry?index}"
                 >
                   ${curEntry.title.getData()}
+                  <i class="fa-solid fa-angle-down"></i>
                 </button>
               </h2>
             </div>
