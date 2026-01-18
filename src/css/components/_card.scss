@@ -1,7 +1,7 @@
 .card-type-asset {
   border-radius: 0;
   background-color: transparent;
-  
+
   .aspect-ratio {
     border-width: 0;
     border-radius: 0.5rem 0.5rem 0 0;
@@ -51,6 +51,54 @@
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       text-overflow: ellipsis;
+    }
+  }
+}
+
+.card-interactive {
+  border-radius: 0.5rem;
+  border-color: var(--brand-cni-lightter);
+
+  .aspect-ratio:has(.icon) {
+    padding-bottom: 96px;
+  }
+
+  &.card-type-template {
+    .aspect-ratio-item {
+      width: 3rem;
+    }
+  }
+
+  .card-title {
+    font-weight: var(--font-weight-bold);
+    color: var(--brand-corporate-pure);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .btn-link {
+    padding: 0;
+    border: 0;
+    font-size: 0.75rem;
+    color: var(--brand-cni-pure);
+
+    .inline-item {
+      border: solid 1px var(--brand-cni-pure);
+      padding: 3px;
+      border-radius: 5000px;
+    }
+    
+    .fa-solid,
+    .fas {
+      font-size: 7.5px;
+      background-color: var(--brand-cni-pure);
+      color: var(--white);
+      padding: 5.25px;
+      border-radius: 5000px;
+      width: 18px;  
     }
   }
 }
