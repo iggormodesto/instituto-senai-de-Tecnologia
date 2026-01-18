@@ -15,3 +15,9 @@
     line-height: 113%;
   }
 }
+
+.portlet-boundary:has(.big-number) {
+  background-image: url("../images/bg-sobre.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
