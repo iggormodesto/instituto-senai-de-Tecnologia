@@ -84,13 +84,20 @@
     border: 0;
     font-size: 0.75rem;
     color: var(--brand-cni-pure);
+    margin-bottom: 1rem;
+    @include transition(all 0.3s ease-in-out);
 
     .inline-item {
       border: solid 1px var(--brand-cni-pure);
-      padding: 3px;
       border-radius: 5000px;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      @include transition(all 0.3s ease-in-out);
     }
-    
+
     .fa-solid,
     .fas {
       font-size: 7.5px;
@@ -98,7 +105,35 @@
       color: var(--white);
       padding: 5.25px;
       border-radius: 5000px;
-      width: 18px;  
+      width: 18px;
+      @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+      text-decoration: none;
     }
   }
+
+  &:hover {
+    background-color: var(--background-cni);
+    .btn-link {
+      color: var(--brand-cni-dark);
+      .inline-item {
+        background-color: var(--brand-cni-dark);
+        .fa-solid,
+        .fas {
+          background-color: transparent;
+          font-size: 0.75rem;
+          padding: 6px;
+          width: auto;
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}
+
+.card-interactive-primary:hover::after,
+.card-interactive-primary.hover::after {
+  background-color: transparent;
 }
