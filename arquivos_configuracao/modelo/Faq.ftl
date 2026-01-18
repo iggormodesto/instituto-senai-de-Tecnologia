@@ -9,6 +9,8 @@
       
       <div class="accordion" id="accordion_${.vars['reserved-article-id'].data}">
         <#list entry.getSiblings() as curEntry>
+          <#assign is_2_columns = getterUtil.getBoolean(curEntry.is_2_columns.getData()) />
+          
           <div class="card">
             <div 
               class="card-header" 
@@ -35,7 +37,7 @@
               aria-labelledby="heading_${.vars['reserved-article-id'].data}_${curEntry?index}" 
               data-parent="#accordion_${.vars['reserved-article-id'].data}"
             >
-              <div class="card-body">
+              <div class="card-body ${is_2_columns?then('two-columns', '')}">
                 ${curEntry.content.getData()}
               </div>
             </div>

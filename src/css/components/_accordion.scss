@@ -62,4 +62,11 @@
       margin-bottom: 0.5rem;
     }
   }
+
+  @include media-breakpoint-up(lg) {
+    .two-columns {
+      column-count: 2;
+      column-gap: 30px;
+    }
+  }
 }
