@@ -30,9 +30,11 @@
           <@liferay.navigation_menu default_preferences="${preferences}" />
         </div>
 
-        <div class="autofit-col d-none d-lg-flex">
-          <@liferay.user_personal_bar />
-        </div>
+        <#if themeDisplay.isSignedIn()>
+          <div class="autofit-col d-none d-lg-flex">
+            <@liferay.user_personal_bar />
+          </div>
+        </#if>
       </div>
     </div>
   </div>
