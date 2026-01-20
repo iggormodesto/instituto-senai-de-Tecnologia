@@ -4,12 +4,20 @@
       & > .portlet-column-only {
         & > .portlet-column-content-only {
           & > .portlet-boundary {
-            padding-top: 5.5rem;
-            padding-bottom: 5.5rem;
             & > .portlet {
               @include make-container();
               width: 100%;
               max-width: var(--container-max-xl);
+            }
+
+            @include media-breakpoint-up(lg) {
+              padding-top: 5.5rem;
+              padding-bottom: 5.5rem;
+            }
+
+            @include media-breakpoint-down(md) {
+              padding-top: 3rem;
+              padding-bottom: 3rem;
             }
           }
         }

@@ -7,11 +7,11 @@
     <div class="h4 text-center article-description text-secondary-100 py-3 m-0">${.vars["reserved-article-description"].data}</div>
     
     <#if entry.getSiblings()?has_content>
-      <ul class="list-unstyled d-flex justify-content-center m-0 pt-3">
+      <ul class="list-unstyled d-lg-flex justify-content-center m-0 pt-3">
         <#list entry.getSiblings() as curEntry>
-          <li class="px-1">
+          <li class="px-lg-1 ${curEntry?has_next?then('mb-3 mb-lg-0', '')}">
             <a 
-              class="d-flex align-items-center h5 mb-0 px-3"
+              class="d-flex align-items-center h5 mb-0 px-lg-3"
               href="${curEntry.url.getData()}"
             >
               <div class="mr-2">

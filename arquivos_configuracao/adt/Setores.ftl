@@ -21,9 +21,9 @@
         <#assign imageXml = docXml.valueOf("//dynamic-element[@field-reference='icon']/dynamic-content[@language-id='${locale}' ]")!"" />
         <#assign imgJson = jsonFactoryUtil.createJSONObject(imageXml) />
 
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-lg-3 pb-3 pb-lg-0">
           <button
-            class="card card-interactive card-interactive-primary card-type-template template-card mb-lg-0 w-100"
+            class="card card-interactive card-interactive-primary card-type-template template-card mb-3 mb-lg-0 w-100 p-0"
             data-target="#modal_${journalArticle.getArticleId()}"
             data-toggle="modal"
             type="button"

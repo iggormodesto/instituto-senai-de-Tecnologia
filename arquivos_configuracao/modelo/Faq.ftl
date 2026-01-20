@@ -26,7 +26,7 @@
                   aria-controls="collapse_${.vars['reserved-article-id'].data}_${curEntry?index}"
                 >
                   ${curEntry.title.getData()}
-                  <i class="fa-solid fa-angle-down"></i>
+                  <i class="fa-solid fa-angle-down ml-3"></i>
                 </button>
               </h2>
             </div>
