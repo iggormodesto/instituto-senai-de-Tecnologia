@@ -114,7 +114,9 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &.active,
+  &:active {
     background-color: var(--background-cni);
     .btn-link {
       color: var(--brand-cni-dark);
@@ -133,6 +135,10 @@
   }
 }
 
+.card-interactive-primary:focus::after,
+.card-interactive-primary.focus::after,
+.card-interactive-primary:active::after,
+.card-interactive-primary.active::after,
 .card-interactive-primary:hover::after,
 .card-interactive-primary.hover::after {
   background-color: transparent;

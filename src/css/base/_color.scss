@@ -3,6 +3,7 @@ $theme-color-palette: (
 	"neutral-dark": var(--neutral-dark),
 	"primary-000": var(--color-primary-000),
 	"secondary-100": var(--color-secondary-100),
+	"brand-corporate-medium": var(--color-secondary-100),
 );
 
 @each $color, $value in $theme-color-palette {

@@ -2,7 +2,7 @@
   <div class="col-lg-7">
     <h2 class="text-primary-000 mb-3">Notícias</h2>
 
-    <p class="neutral-dark">
+    <p class="text-neutral-dark">
       Lorem ipsum dolor sit amet consectetur. Imperdiet scelerisque 
       vestibulum consequat viverra quam in purus consectetur pulvinar.
     </p>

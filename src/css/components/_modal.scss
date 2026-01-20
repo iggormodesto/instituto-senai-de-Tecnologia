@@ -1,0 +1,35 @@
+.modal-content {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  border-color: var(--neutral-lightest);
+}
+
+.close {
+  background-color: var(--brand-senai-lightest);
+  border-radius: 0.25rem;
+  color: var(--brand-senai-dark);
+}
+
+.modal-header {
+  padding: 0;
+  border-width: 0;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.modal-title {
+  font-size: 1rem;
+  color: var(--brand-corporate-pure);
+}
+
+.modal-body {
+  border-width: 0;
+  padding: 0;
+}
+
+.modal-dialog {
+  @include media-breakpoint-up(lg) {
+    max-width: 696px;
+  }
+}
