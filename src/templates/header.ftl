@@ -1,4 +1,6 @@
 <header id="banner">
+  <@liferay.control_menu />
+  
   <div class="navbar navbar-classic navbar-top py-3 px-0">
     <div class="container-fluid container-fluid-max-xl user-personal-bar">
       <div class="justify-content-center justify-content-lg-start align-items-center autofit-row">

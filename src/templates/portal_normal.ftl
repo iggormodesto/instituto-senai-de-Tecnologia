@@ -26,11 +26,9 @@
 		<@liferay_util["include"] page=body_top_include />
 
 		<div class="d-flex flex-column min-vh-100">
-			<@liferay.control_menu />
+			<#include "${full_templates_path}/header.ftl" />
 
 			<div class="d-flex flex-column flex-fill position-relative" id="wrapper">
-				<#include "${full_templates_path}/header.ftl" />
-
 				<main class="${portal_content_css_class} flex-fill" id="content">
 					<#if selectable>
 						<@liferay_util["include"] page=content_include />
